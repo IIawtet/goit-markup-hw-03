@@ -1,0 +1,412 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: "roboto", sans-serif;
+}
+.container {
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.link {text-decoration: none;}   
+.list {list-style: none;}
+ul {padding-inline-start: 0px;}
+button {padding: 0;
+        border: none;
+        }
+h1,h2,h3,h4,h5,p,li,ul{margin-top:0; margin-bottom:0;}
+/* _____________________HEADER_____________________ */
+.nav-links {
+    display: flex;
+    margin-left: 76px;
+}
+.header-flex{
+    display: flex;
+    align-items: center;
+    height: 72px;
+}
+
+.nav-links .nav-link{
+    margin-right: 40px;
+}
+.nav-links .nav-link:last-child{ margin-right: 0;}
+
+.header-logo{
+    font-family: 'Raleway' , sans-serif;
+    font-style:normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(21/18);
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2E2F42;
+}
+
+.logo-web {
+    color: #4D5AE5;
+}
+
+
+button:hover,.footer-logo:hover,.footer-logo:focus {cursor: pointer;}
+
+.header-link{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+    color: inherit;
+     
+}
+
+.header-link:hover ,.header-link:focus ,.contacts:hover,.contacts:focus ,.contact-number:focus ,.contact-number:hover,.contact-mail:hover ,.contact-mail:focus
+ {
+    color: #404BBF;
+    cursor: pointer;
+}
+.contacts{
+    display: flex;
+    margin-left: auto;
+}
+.contact-mail,
+.contact-number {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.contact{
+    margin-right: 40px;
+}
+.contact:last-child {
+    margin-right: 0px;
+}
+.header{
+    border-bottom: 1px solid #E7E9FC;
+    width: 1440px;
+    /* тимчасово */
+    margin-right: auto;
+    margin-left: auto;
+    /* тимчасово */
+}
+
+/* __________________________MAIN+1section______________________ */
+
+
+.upper-section{
+    height: 600px;
+    text-align: center;  
+    background: #2E2F42;
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    /* тимчасовий бекграунт для зручності */
+}
+.upper-section-container{
+padding: 188px 472px;
+/* можливо не правильно, прошу перевіряючого ментора підсказати як то
+ відцентрувати, бо в через auto не виходить */
+}
+.main-text {
+    margin-bottom: 48px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 496px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07; 
+    letter-spacing: 0.02em;
+    color: #FFFFFF;}
+
+.upper-section-button {
+    padding: 16px 32px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;        
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+
+}
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 120px 0px;
+    /* В ДЗ пише, що відстань, між сусідніми елементами має відступатись марджином
+    але, мені до кінця не зрозуміло,чи білий простір навколо тексту входить до секції,
+    в такому випадку це падінг і між секціями немає марджину
+    якщо це секція все, що тільки в рамках тексту, то задається марджин
+    секція чи простір? */
+}
+
+.about-list .about-item {
+    width: 264px;
+    margin-right: 24px;
+}
+
+.about-list .about-item:last-child {
+    margin-right: 0;
+}
+
+.about-item-upper {
+    margin-bottom: 8px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: inherit;
+
+}
+
+.about-item-lower {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.upper-section-button:hover , .upper-section-button:focus {background-color: #404BBF}
+/* _______________________________2section______________________ */
+.about-work {
+    margin-bottom: 120px;
+}
+
+.about-work-flex {
+    display: flex;
+}
+
+.about-work-flex-item {
+    margin-right: 24px;
+}
+
+.about-work-header {
+    margin-bottom: 72px;
+}
+
+.about-work-flex-item:nth-child(3n) {
+    margin-right: 0px;
+}
+.about-work-header {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+
+/*__________________________________3section_____________________*/
+.about-team-container{
+    padding: 120px 0;
+}
+.about-team-list{
+    display: flex;
+}
+.about-team-header {
+    margin-bottom: 72px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+.team-name {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+.team-position{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.team-name-position{
+    padding: 32px 16px;
+}
+.about-team{
+    background: #F4F4FD;
+    width: 1440px; 
+    margin-left: auto;
+    margin-right: auto;
+    /* тимчасове для  */
+}
+.about-work-item{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    margin-right: 24px;
+}
+.about-work-item:last-child{
+    margin-right:0px;
+}
+
+
+/*__________________________________footer_____________________*/
+.footer {
+    background: #2E2F42;
+    width: 1440px;
+    height: 312px;
+    margin-right: auto;
+    margin-left: auto;
+    /* тимчасово */
+}
+.footer-container{
+    padding: 100px 0;
+    margin-left: 0;
+    display: block;
+}
+.footer-logo{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(21/18);
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F4F4FD;
+}
+.footer-text{
+    margin-top: 17.5px;
+    width: 264px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;}
+/* .adress{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;    
+    letter-spacing: 0.03em;
+    color: #FFFFFF; */
+        
+/* }
+.footer-contacts{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+} */
+/*_________________________________PORTFOLIO_____________________*/
+.portfolio-first-section{
+    margin-top: 96px;
+    margin-bottom: 84px;
+}
+.portfolio-buttons{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-button-flex{
+    margin-right: 24px;
+}
+.portfolio-button-flex:last-child{
+    margin-right: 0;
+}
+.portfolio-button{
+    padding:12px 24px;
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+}
+
+
+.portfolio-button:hover, .portfolio-button:focus {
+    color: #FFFFFF;
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 2px 1px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    border:1px solid #4D5AE5
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project{
+    margin-right:24px;
+    width: 360px;
+    height: 420px;
+    border: 1px solid #E7E9FC;
+    margin-bottom: 48px;
+}
+.project:nth-child(3n) {
+    margin-right: 0;
+}
+.project:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
+.project-name{
+    margin-top: 32px;
+    padding-left: 16px;
+    font-family:inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.project-direction{
+    margin-top: 8px;
+    padding-left: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.portfolio-last-section{
+    margin-bottom: 120px;
+}
